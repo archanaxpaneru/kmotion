@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details</title>
+  <title>Unfold &mdash; A onepage portfolio HTML template by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="description" content=" ">
+  <meta name="keywords" content="html, css, javascript, jquery">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <link rel="stylesheet" href="css/vendor/animate.min.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+ <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      font-family: sans-serif;
+      position: relative;
+    }
+
+    .image-wrapper {
+      position: relative;
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      background: rgba(0,0,0,0.4);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+    }
+
+    .arrow:hover {
+      background: rgba(0,0,0,0.7);
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 100px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+
+    .description {
+      margin-top: 20px;
+    }
+  </style></head>
+<body>
+  <div class="container">
+    <div class="image-wrapper">
+      <img id="mainImage" class="main-image" src="images/work_2_a_full.jpg" alt="Main Product Image">    </div>
+    
+    <div class="gallery">
+
+        <figure class="mb-4">
+          <img src="images/work_1_full.jpg" alt="Image" class="img-fluid" onclick="changeMainImage(this)">
+        </figure>
+        <figure class="mb-4">
+          <img src="images/work_1_a_full.jpg" alt="Image" class="img-fluid" onclick="changeMainImage(this)">
+        </figure>
+        <figure class="mb-4">
+          <img src="images/work_1_full.jpg" alt="Image" class="img-fluid" onclick="changeMainImage(this)">
+        </figure>
+        <figure class="mb-4">
+          <img src="images/work_1_a_full.jpg" alt="Image" class="img-fluid" onclick="changeMainImage(this)">
+        </figure>
+    </div>
+
+    <div class="col-md-6 pr-md-5">
+      <h2>Flip Book 3x3"</h2>
+      <p>Thissss is a description of the product. It includes features, specs, and other relevant details.</p>
+
+    </div>
+  </div>
+
+  <script>
+    function changeMainImage(thumb) {
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = thumb.src;
+    }
+  </script>
+</body
